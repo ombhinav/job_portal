@@ -11,12 +11,9 @@ const app = express();
 
 // Add this before your other routes
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: ['https://your-frontend-url.vercel.app', 'http://localhost:3000']
+}));
 
 app.use(express.json());
 

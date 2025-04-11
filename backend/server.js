@@ -12,7 +12,8 @@ const app = express();
 // Add this before your other routes
 
 app.use(cors({
-  origin: ['https://job-portal-six-mu.vercel.app/', 'http://localhost:3000'],
+  // origin: ['https://job-portal-six-mu.vercel.app/', 'http://localhost:3000'],
+  origin:"*",
   credentials: true
 }));
 
